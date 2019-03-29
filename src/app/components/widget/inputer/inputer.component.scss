@@ -1,0 +1,16 @@
+input {
+  box-sizing : border-box;
+
+  width: 100%;
+  display: block;
+  border: none;
+
+  height: 2em;
+  line-height: 2em;
+  text-indent: 1.4em;
+}
+
+input::placeholder {
+  color: #1122DD;
+  font-style: italic;
+}

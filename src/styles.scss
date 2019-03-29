@@ -1,0 +1,31 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+}
+
+
+
+.btn-success {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+
+  background: #1abc9c;
+  font-weight: bold;
+  color: #FFF;
+  height: 2em;
+  cursor: pointer;
+}
+
+.btn-success:focus {
+  outline:0;
+}
+
+.btn-success:active {
+  background-color: #16a085;
+}

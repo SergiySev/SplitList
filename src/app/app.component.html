@@ -1,0 +1,27 @@
+<main>
+  <h2>Customer Feedback</h2>
+  <div>
+    <app-widget
+      headerText="Customer"
+      buttonText="Add new"
+      placeholderText="New Customer"
+      emptyText="Please add a customer"
+      [list]="customersList"
+      [selectedId]="selectedId"
+      (save)="onSaveCustomer($event)"
+      (select)="onSelectCustomer($event)"
+    ></app-widget>
+    <app-widget
+      headerText="Feedback"
+      buttonText="Add new"
+      placeholderText="New Feedback"
+      emptyText="Please select a customer"
+      [interactive]="false"
+      [canAdd]="false"
+      (save)="onSaveFeedback($event)"
+      [list]="feedbacksList"
+      [parentId]="selectedId"
+    ></app-widget>
+  </div>
+</main>
+

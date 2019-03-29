@@ -1,0 +1,12 @@
+<div class="list" *ngIf="list.length || showInput" id="{{selectedId}}">
+  <app-inputer *ngIf="showInput" placeholderText="{{placeholderText}}"></app-inputer>
+
+  <li *ngFor="let item of list; index as index; trackBy: trackByFn"
+      [ngClass]="{'selected': item.id == selectedId}"
+      [interactive]="interactive"
+      (selected)="selected($event)"
+      id="{{item.id}}"
+      appMouseHover>{{item.label}}</li>
+</div>
+
+<div *ngIf="!list.length && !showInput" class="empty">{{emptyText}}</div>

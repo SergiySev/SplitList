@@ -1,0 +1,12 @@
+<section>
+  <app-header
+    headerText="{{headerText}}"
+    buttonText="{{buttonText}}"
+    [isButtonVisible]="buttonVisibility()"></app-header>
+  <app-list
+    placeholderText="{{placeholderText}}"
+    emptyText="{{emptyText}}"
+    [interactive]="interactive"
+    [selectedId]="selectedId"
+    [list]="list"></app-list>
+</section>
